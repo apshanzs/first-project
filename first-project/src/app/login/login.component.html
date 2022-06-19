@@ -1,0 +1,20 @@
+<div class="login-contianer">
+    <img class="film" src="assets/download.jpg" alt="">
+    <div class="logo">rotten potatoes</div>
+    <div class="desc">Hi this we sell we have items</div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">userName</label>
+<input type="text" name="name" class="form-control" [(ngModel)]="userName">
+
+        </div>
+        <div class="form-group">
+            <label for="passd">password</label>
+            <input type="paswword" name="passd" class="form-control" [(ngModel)] ="password">
+        </div>
+        <div class="btn container">
+            <div class="error">{{errMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
